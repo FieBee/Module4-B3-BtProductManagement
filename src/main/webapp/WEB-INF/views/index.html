@@ -10,15 +10,25 @@
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-2">
                         <h2>Product <b>Management</b></h2>
                     </div>
 
                     <div class="col-sm-4">
                         <form th:action="@{/products/search}">
-                            <input type="text" name="aloso" placeholder="Enter customer name">
-                            <input type="submit">
+                            <div style="float: left" class="col-sm-6">
+                                <input type="text" name="aloso" placeholder="Enter product name">
+                            </div>
+                            <div style="float: left" class="col-sm-2">
+                                <input type="submit">
+                            </div>
                         </form>
+                    </div>
+                    <div class="col-sm-2">
+                        <form action="/products">
+                            <input width="50px" type="submit" value="Home">
+                        </form>
+
                     </div>
 
 
